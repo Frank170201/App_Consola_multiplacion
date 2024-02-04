@@ -8,10 +8,7 @@ export interface CreateTableOptions {
 }
 
 export class CreateTable implements CreateTableUseCase {
-  constructor() /**
-   * DI - Dependency Injection
-   */
-  {}
+  constructor() {}
 
   execute({ base, limit = 10 }: CreateTableOptions) {
     let outputMessage = "";
